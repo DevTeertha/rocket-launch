@@ -6,5 +6,4 @@ const store = configureStore({
         launches: launchesReducer,
     },
 });
-
 export default store;

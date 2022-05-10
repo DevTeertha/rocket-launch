@@ -25,7 +25,7 @@ const RocketCard = ({ rocket }: any) => {
                             {' '}
                             {rocket?.rocket?.rocket_name}{' '}
                         </p>
-                        {rocket?.launch_success ? (
+                        {rocket.launch_success ? (
                             <p className="fw-bold text-end m-0">
                                 <Badge bg="success">Success</Badge>
                             </p>

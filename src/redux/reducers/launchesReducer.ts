@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export const getLaunches: any = createAsyncThunk(
     'launches/getLaunches',
@@ -21,7 +21,10 @@ const launchesSlice = createSlice({
             state.status = 'loading';
             state.loading = true;
         },
-        [getLaunches.fulfilled]: (state: any, action) => {
+        [getLaunches.fulfilled]: (
+            state: any,
+            action: PayloadAction<string>,
+        ) => {
             state.status = 'success';
             state.loading = false;
             state.launches = action.payload;
