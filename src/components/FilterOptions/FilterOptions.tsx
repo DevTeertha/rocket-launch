@@ -15,16 +15,18 @@ const FilterOptions = ({ all, setAll, setIsSuccess, setIsUpcoming }: any) => {
                         />
                     </div>
                     <div className="pb-2">
-                        <p className="text-secondary mb-1">Filter By Date:</p>
+                        <p className="text-secondary mb-1">
+                            Filter By Launch Date:
+                        </p>
                         <Form.Group controlId="filterByDate">
                             <Form.Check
                                 type="checkbox"
-                                label="Last Date"
+                                label="Last Week"
                                 disabled={all}
                             />
                             <Form.Check
                                 type="checkbox"
-                                label="Last Week"
+                                label="Last Month"
                                 disabled={all}
                             />
                             <Form.Check
