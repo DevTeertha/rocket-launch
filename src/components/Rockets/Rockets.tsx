@@ -24,6 +24,7 @@ const Rockets = () => {
             const query = keyword.toLowerCase();
             return launch.rocket.rocket_name.toLowerCase().indexOf(query) >= 0;
         });
+        setAll(false);
         setFiltered(newFiltered);
     };
     useEffect(() => {
